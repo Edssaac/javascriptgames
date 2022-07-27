@@ -1,0 +1,99 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+/* Elemento Dino */
+#dino {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 4px;
+    left: 25px;
+
+    background-image: url("assets/dino_running.gif");
+}
+
+/* Elemento Cactus */
+.cactus {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 5px;
+    background-image: url("assets/cactus.png");
+}
+
+/* Elemendo Background */
+#background {
+    position: absolute;
+    bottom: 0;
+    background-image: url("assets/background.png");
+    background-repeat: repeat-x;
+    animation: ground 600s infinite linear;
+    width: 100vw;
+    height: 200px;
+
+}
+
+/* Animação do Background */
+@keyframes ground {
+    from {
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0;
+    }
+}
+
+/* Fim de Jogo */
+.game_over {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.game_over_message {
+    margin-top: 50vh;
+    font-family: Arial;
+    font-size: 35px;
+    color: red;
+}
+
+.game_over_button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+}
+
+.game_over_button:hover {
+    background-color: crimson;
+    color: black;
+}
+
+.game_over_score {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.score {
+    text-align: right;
+    padding: 10px 20px;
+
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}

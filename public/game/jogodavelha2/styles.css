@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    background-color: #f9ccdb;
+}
+
+#head {
+    font-family: 'Roboto Mono', monospace;
+
+    margin: auto;
+
+    margin-top: 40px;
+
+    width: 340px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogador {
+    float: left;
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+div.placar {
+    display: table;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #d6efe8;
+    margin-right: 10px;
+
+    margin: auto;
+
+    height: 70px;
+}
+
+#head .placar p {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+h9 {
+    margin: 10px;
+}
+
+.espaco {
+    width: 80px;
+    height: 65px;
+
+    border: 2px solid #000;
+
+    float: left;
+
+    text-align: center;
+    padding-top: 15px;
+}
+
+.tabuleiro {
+    margin: auto;
+
+    width: 252px;
+    height: 252px;
+}
+
+div.botao {
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao button {
+    border-radius: 8px;
+    padding: 15px 32px;
+
+    background-color: #f9ccdb;
+    border: #000 solid 2px;
+
+    font-family: 'Roboto Mono', monospace;
+    transition: 200ms;
+}
+
+.botao button:active {
+    background-color: whitesmoke;
+}
+
+button:focus {
+    outline: none;
+}
