@@ -11,3 +11,10 @@ body {
     background: linear-gradient(to bottom, #6ab7f5, #fff);
     min-height: 100vh;
 }
+
+.tab {
+    text-indent: 25px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 2% 0 2%;
+}
