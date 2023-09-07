@@ -2,13 +2,13 @@ function preload() {
   intro = loadSound('sons/intro.mp3');
   imagemTelaInicial = loadImage('imagens/cenário/telaInicial.png');
   fonteTelaInicial = loadFont('assets/fonteTelaInicial.otf');
-  
+
   imagemFundasso = loadImage('imagens/cenário/fundasso.png');
   imagemFundo = loadImage('imagens/cenário/fundo.png');
   imagemMeio = loadImage('imagens/cenário/meio.png');
   imagemFrente = loadImage('imagens/cenário/frente.png');
 
-  imagemVida = loadImage('assets/coracao.png');  
+  imagemVida = loadImage('assets/coracao.png');
   imagemPersonagem = loadImage('imagens/personagem/correndo.png');
 
   imagemInimigoGrande = loadImage('imagens/inimigos/troll.png');
