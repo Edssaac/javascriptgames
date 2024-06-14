@@ -1,3 +1,21 @@
-Neste repositório o meu objetivo é centralizar meus jogos em javascript em um único lugar, são projetos simples mas que me ajudaram a começar meus estudos na área de programação. Os jogos abaixos estão [disponíveis](https://edssaac.github.io/javascriptgames/) para serem jogados, espero que tragam alguma diversão a quem possuir a curiosidade.
+## Apresentação Geral
 
-![jogos-disponiveis](https://raw.githubusercontent.com/Edssaac/javascriptgames/master/images/grid-jogos.png)
+**Nome do Projeto:** Javascipt Games
+
+**Descrição:**
+
+Esses são projetos simples, 
+mas fundamentais para o início dos meus estudos na área de programação. Os jogos listados abaixo estão disponíveis para serem jogados, e 
+espero que proporcionem diversão a quem tiver a curiosidade de experimentá-los.
+
+![demo](https://raw.githubusercontent.com/Edssaac/javascriptgames/master/src/images/grid-jogos.png)
+
+**Objetivo:**
+
+Centralizar todos os meus jogos mais básicos que foram desenvolvidos em JavaScript.
+
+**Tecnologias Utilizadas:**
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JAVASCRIPT](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
