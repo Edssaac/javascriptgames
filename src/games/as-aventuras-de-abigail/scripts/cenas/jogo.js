@@ -5,7 +5,6 @@ class Jogo {
   }
 
   setup() {
-
     vida = new Vida(3, 3);
     pontuação = new Pontuacao();
 
@@ -53,8 +52,6 @@ class Jogo {
         window.location.reload()
       }
     }
-    
-    
   }
 
   draw() {
@@ -103,7 +100,6 @@ class Jogo {
     }
   }
 }
-
 
 // if (key === "Enter") {
 //   somDoJogo.stop();

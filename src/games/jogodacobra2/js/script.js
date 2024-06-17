@@ -15,7 +15,7 @@ var square = 20; // square size
 var len = 20; // amount of squares
 
 var trail = [];
-tail = 5; // snake sizing
+var tail = 5; // snake sizing
 
 var score = tail; // score
 var highScore = 0;
@@ -87,6 +87,7 @@ function game() {
 
     // snake movement
     trail.push({ x: px, y: py }) // 
+
     while (trail.length > tail) {
         trail.shift(); // 
     }
@@ -104,7 +105,6 @@ function game() {
 }
 
 function keyPush(event) {
-
     switch (event.keyCode) {
         case 65: //left
         case 37: //left

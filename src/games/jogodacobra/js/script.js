@@ -4,6 +4,7 @@ let box = 32; // Definindo o tamanho de cada pixel;
 let size = 16; // Definindo o tamanho do tabuleiro;
 
 let snake = []; // Corpo da cobra;
+
 snake[0] = { // Valores iniciais (cabeça) da cobra:
     x: (size / 2) * box,
     y: (size / 2) * box

@@ -30,6 +30,5 @@ class TelaInicial {
     botão.y = height / 2 + 80;
     botão.draw();
     fill('#fff'); //Modifica a cor dos pontos
-    
   }
 }

@@ -17,7 +17,6 @@ let score = 0;
 
 // Função responsável por verificar se o pulo foi requisitado:
 function handleKeyUp(key) {
-
     switch (key.keyCode) {
         case 32: // Espaço
         case 38: // ArrowUp
@@ -25,7 +24,6 @@ function handleKeyUp(key) {
             handleClick();
             break;
     }
-
 }
 
 // Função responsável por verificar se pode pular:
@@ -36,45 +34,35 @@ function handleClick() {
 
 // Função responsável por realizar o pulo:
 function jump() {
-
     let position = 0; // Tamanho do pulo
     isJumping = true; // Pulando
 
     let upInterval = setInterval(() => {
-
         if (position >= 180) {   // Se estiver maior que essa altura
-
             clearInterval(upInterval); // Parar o intervalo
 
             // Descendo:
             let downInterval = setInterval(() => {
-
                 if (position <= 15) {
                     dino.style.backgroundImage = "url('assets/dino_running.gif')";
                     clearInterval(downInterval); // Parar o intervalo
                     isJumping = false; // Parou de pular
-                }
-                else {
+                } else {
                     position -= 16; // voltando para o chão
                     dino.style.bottom = position + "px";
                 }
             }, 20);
-
-        }
-        else {
+        } else {
             // Subindo:
             position += 20; // Pulando
             dino.style.backgroundImage = "url('assets/dino_jumping.png')";
             dino.style.bottom = position + "px";
         }
-
     }, 20);
-
 }
 
 // Função responsável por criar os cactus na tela:
 function createCactus() {
-
     const cactus = document.createElement("div") // Criando uma div
     let cactusPosition = window.screen.width + 200; // Posição do cactus
     let randomTime = Math.random() * 4000;
@@ -84,11 +72,9 @@ function createCactus() {
     background.appendChild(cactus); // Adicionando o cactus ao background
 
     let leftInterval = setInterval(() => {
-
         if (cactusPosition < -60) {
             clearInterval(leftInterval);
             background.removeChild(cactus); // Removendo o cactus que foi passado
-
         } else if (!isJumping && cactusPosition > 0 && cactusPosition < 60) {
             clearInterval(leftInterval);
             clearInterval(scoreInterval);
@@ -98,12 +84,10 @@ function createCactus() {
                 <p class='game_over_score'>Pontuação: ${("00" + score).slice(-3)}</p>
                 <button class='game_over_button' type='button' onclick='restart()'>Tentar Novamente</button>
             </div>`;
-
         } else {
             cactusPosition -= 10; // Movendo para a esquerda
             cactus.style.left = cactusPosition + "px";
         }
-
     }, 20)
 
     setTimeout(createCactus, randomTime); // Chamando a função para gerar um novo cactu em um tempo aleatório
@@ -116,7 +100,6 @@ function restart() {
 
 // Função responsável por atualizar o score:
 function updateScore() {
-
     scoreInterval = setInterval(() => {
         score++;
         scorePoints.innerText = ("00" + score).slice(-3);
@@ -135,4 +118,3 @@ document.addEventListener("keyup", handleKeyUp);
 
 // Escutando clicks:
 document.addEventListener("click", handleClick);
-

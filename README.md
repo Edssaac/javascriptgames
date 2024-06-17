@@ -8,7 +8,7 @@ Esses são projetos simples,
 mas fundamentais para o início dos meus estudos na área de programação. Os jogos listados abaixo estão disponíveis para serem jogados, e 
 espero que proporcionem diversão a quem tiver a curiosidade de experimentá-los.
 
-![demo](https://raw.githubusercontent.com/Edssaac/javascriptgames/master/src/images/grid-jogos.png)
+![demo](https://raw.githubusercontent.com/Edssaac/javascriptgames/master/src/images/grid-interface.png)
 
 **Objetivo:**
 

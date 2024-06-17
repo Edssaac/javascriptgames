@@ -19,7 +19,7 @@ body {
     bottom: 4px;
     left: 25px;
 
-    background-image: url("assets/dino_running.gif");
+    background-image: url("../assets/dino_running.gif");
 }
 
 /* Elemento Cactus */
@@ -28,14 +28,14 @@ body {
     height: 60px;
     position: absolute;
     bottom: 5px;
-    background-image: url("assets/cactus.png");
+    background-image: url("../assets/cactus.png");
 }
 
 /* Elemendo Background */
 #background {
     position: absolute;
     bottom: 0;
-    background-image: url("assets/background.png");
+    background-image: url("../assets/background.png");
     background-repeat: repeat-x;
     animation: ground 600s infinite linear;
     width: 100vw;

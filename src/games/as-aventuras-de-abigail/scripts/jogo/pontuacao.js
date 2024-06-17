@@ -32,5 +32,4 @@ class Pontuacao {
     textAlign(CENTER);
     text('Pontos: ' + parseInt(this.pontos), width / 2, (height / 2) + 20);
   }
-
 }

@@ -16,7 +16,6 @@ class Vida {
       const posicao = this.xInicial * (i + 1)
 
       image(imagemVida, posicao + margem, this.y, this.largura, this.altura);
-
     }
   }
 
